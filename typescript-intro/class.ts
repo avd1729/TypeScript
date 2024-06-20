@@ -1,10 +1,17 @@
-class Employee {
+import {Login , User} from './interface';
+import * as UserLogin from './interface';
+
+class Employee implements UserLogin.Login {
     id!:number;
     name!:string;
     address!:string; // Property 'address' has no initializer and is not definitely assigned in the constructor.
 
     constructor(){
 
+    }
+    // Implement the login method
+    login(): User {
+        return {name: "Avd", age: 20, id: 1, email: ""};
     }
 
     // multiple constructors are not allowed
@@ -75,3 +82,6 @@ dan.setId(22);
 console.log(dan); // Employee2 { name: 'Dan', address: 'New Avenue' }
 let idd = dan.getId();
 console.log(idd);
+
+
+

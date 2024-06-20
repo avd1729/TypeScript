@@ -11,8 +11,13 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _Employee2_id;
+Object.defineProperty(exports, "__esModule", { value: true });
 class Employee {
     constructor() {
+    }
+    // Implement the login method
+    login() {
+        return { name: "Avd", age: 20, id: 1, email: "" };
     }
 }
 let john = new Employee();
