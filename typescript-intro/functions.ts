@@ -27,3 +27,13 @@ const add3 = (a:number , b:number , ...c: number[]) => {
 
 let nums = [1,2,3];
 console.log(add3(1,2, ...nums)); 
+
+console.log(add3(1,2, 1,2,3)); 
+
+
+function getItems<T> (items: T[]): T[] {
+    return new Array<T>().concat(items);
+}
+
+let res = getItems<string>(["hey ," , "there"]);
+console.log(res);
