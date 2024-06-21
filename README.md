@@ -1,3 +1,3 @@
-# Angular
+# TypeScript
 
-Repo to practice Angular concepts
+Repo to practice TypeScript
